@@ -1,6 +1,6 @@
 package tp4;
 
-public class Employee {
+public class Employe {
 private String name;
 private String firstname;
 private String lastname;
@@ -9,7 +9,7 @@ private int id;
 private int AnnualSalary;
 private int raiseSalary;
 
-public Employee(int id, int sal, String fn, String ln) {
+public Employe(int id, int sal, String fn, String ln) {
 	this.salary= sal;
 	this.firstname=fn;
 	this.id=id;
@@ -18,7 +18,7 @@ public Employee(int id, int sal, String fn, String ln) {
 }
 public int getSalary(){
 	return salary;
-}
+}     
 
 public int getID(){
 	return id;
@@ -45,5 +45,6 @@ public void SetSalary(int salary) {
 public int raiseSalary( int percent) {
 	return this.raiseSalary= (salary * percent)/100;
 }
+
 
 }
