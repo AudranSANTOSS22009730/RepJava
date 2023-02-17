@@ -1,28 +1,30 @@
 package tp4;
-public class Circle {  // Save as "Circle.java"
-	   // private instance variable, not accessible from outside this class
+public class Circle { 
+
 	   private double radius;
 	   private String color;
-	   
-	   // Constructors (overloaded)
-	   /** Constructs a Circle instance with default value for radius and color */
-	   public Circle(double r, String c) {  // 1st (default) constructor
+
+	   public Circle(double r, String c) {  
 	      radius = r;
 	      color = c;
 	   }
 	   
-	   /** Constructs a Circle instance with the given radius and default color */
-	   public Circle(double r) {  // 2nd constructor
+	   public String getColor() {
+		   return color; 
+	   }
+
+	   
+	   public Circle(double r) {  
 	      radius = r;
 	      color = "red";
 	   }
 	   
-	   /** Returns the radius */
+
 	   public double getRadius() {
 	     return radius; 
 	   }
 	   
-	   /** Returns the area of this Circle instance */
+
 	   public double getArea() {
 	      return radius*radius*Math.PI;
 	   }
